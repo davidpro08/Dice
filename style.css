@@ -19,8 +19,13 @@ header h1{
     position: relative;
 }
 
+.roll_dice{
+    width:100%;
+}
+
 .dice{
     background-color: white;
+    display: inline-block;
     width: 100px;
     height: 100px;
     margin: 25px;

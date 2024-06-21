@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a7f23b9aed.js" crossorigin="anonymous"></script>
     <title>주사위 굴리기</title>
 </head>
@@ -18,13 +19,19 @@
     <main>
         <div class="main_wrap">
             <div class="roll_dice">
-                <div class="dice">
-                    
-                </div>
             </div>
             <div class="input_section">
-                <input type="text" autofocus placeholder="주사위 개수" maxlength="2" id="dice_count">
+                <input id="count" type="text" autofocus placeholder="주사위 개수" maxlength="5"
+                max="50000">
                 <input type="button" value="확인" id="submit_button">
+            </div>
+            <div class="result_section">
+                <p id="mean_result">
+
+                </p>
+                <p id="eye_result">
+
+                </p>
             </div>
         </div>
     </main>
