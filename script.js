@@ -11,10 +11,9 @@ $(document).ready(function(){
         dice_mean=updateMean(eyelist, count);
         dice_sd=updateSd(eyelist,dice_mean,count);
         
-
-
         addResult($("#mean_result"), dice_mean);
         addResult($("#sd_result"), dice_sd);
+
     });
 });
 
@@ -29,6 +28,7 @@ function init(){
     dice_mean=0;
     dice_sd=0;
     eyelist=[0,0,0,0,0,0];
+    bar_canvas=$("#bar_chart");
     $("#mean_result").text("평균 : ");
     $("#sd_result").text("표준편차 : ");
 }
@@ -70,8 +70,6 @@ function updateSd(list, mean, count){
     sd=sd.toFixed(4);
     return sd;
 }
-
-
 
 function addResult(container,value){
     container.append(value);
