@@ -14,7 +14,7 @@ header h1{
 
 .main_wrap{
     background-color: antiquewhite;
-    margin: 5vw 3vh 5vw 5vh;
+    margin: 3vh 5vw 0px 5vw;
     min-height: 50vh;
     position: relative;
 }
@@ -41,6 +41,13 @@ header h1{
     margin: 0 auto;
     left: 50%;
     transform: translate(-50%,0%);
+}
+
+#mean_result{
+    display: inline-block;
+}
+#sd_result{
+    display: inline-block;
 }
 
 footer p::before{
